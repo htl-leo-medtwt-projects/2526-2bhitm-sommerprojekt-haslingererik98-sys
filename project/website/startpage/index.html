@@ -1,0 +1,117 @@
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+  }
+
+  body {
+    background: linear-gradient(180deg, #0a1628 0%, #0d2248 40%, #1a3a6e 70%, #2a5a8a 100%);
+  }
+
+  .scene {
+    width: 100%;
+    min-height: 100vh;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sun {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, #ffe066, #f5a800 60%, #c97000 100%);
+    box-shadow: 0 0 60px 30px rgba(245,168,0,0.35),
+                0 0 120px 60px rgba(245,168,0,0.15);
+  }
+
+  .ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 22%;
+    background: linear-gradient(180deg, #1a3a6e 0%, #0d2248 100%);
+    border-top-left-radius: 50% 18px;
+    border-top-right-radius: 50% 18px;
+  }
+
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+  }
+  h2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(161, 157, 157);
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f5a800;
+    font-size: 3em;
+    text-align: center;
+  }
+  .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: black;
+  background-color: #f1b32c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+#highscore-button {
+  color: grey;
+  border: 1px solid grey;
+  background: transparent;
+}
+button:hover {
+  background-color: #f1b32c;
+  color: white;
+  box-shadow: 0 4px 12px rgba(241, 179, 44, 0.5);
+  
+}
+  
+</style>
+
+<div class="scene" id="scene">
+  <div class="sun"></div>
+  <div class="ground"></div>
+  <h1>GeoFlight</h1>
+  <h2>Explore the world from above</h2>
+  <div class="button-container">
+    <a href="../selectionpage/routenauswahl.html"><button>Play</button></a>
+    <a href="../highscore/leaderboard.html"><button id="highscore-button">Highscore</button></a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>

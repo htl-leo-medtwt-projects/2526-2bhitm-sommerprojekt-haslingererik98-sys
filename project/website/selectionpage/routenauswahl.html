@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #0a1628 0%, #0d2248 40%, #1a3a6e 70%, #2a5a8a 100%);
+  }
+  #startsection{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translateX(-50%);
+    color: rgb(161, 157, 157);
+    font-size: 1.5em;
+    text-align: center;
+    
+  }
+  #destinationsection{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    transform: translateX(-50%);
+    color: rgb(161, 157, 157);
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #startbox {
+  background-color: rgba(0, 128, 0, 0.15);
+  width: 200px;
+  height: 110px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 200, 0, 0.3);
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#destinationbox {
+  background-color: rgba(255, 0, 0, 0.15);
+  width: 200px;
+  height: 110px;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 80, 80, 0.3);
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#startbox, #destinationbox {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#change {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-top: 8px;
+  text-align: center;
+}
+
+#change:hover {
+  color: white;
+}
+#Playbutton {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 10px 16px;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 200px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+#Playbutton:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+#Playbutton:active {
+  background-color: rgba(255, 255, 255, 0.35);
+  transform: translateX(-50%) scale(0.98);
+}
+    </style>
+</head>
+<body>
+    <div id="startsection">
+        <p>Starting Country</p>
+        <div id="startbox">
+           <div id="flag1"></div> 
+           <div id="country1"></div>
+           <div id="change">Change</div>
+
+        </div>
+    </div>
+    <div id="destinationsection">
+        <p>Destination Country</p>
+        <div id="destinationbox">
+            <div id="flag2"></div>
+            <div id="country2"></div>
+            <div id="change">Change</div>
+        </div>
+    </div>
+    <a href="../spielansicht/spiel.html" id="Playbutton">Play</a>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 10%;
+        }
+        #leaderboard {
+            max-width: 400px;
+            margin: 20px auto;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+        }
+        .entry {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 10px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+        }
+        .entry:nth-child(even) {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .rank {
+            font-weight: bold;
+            color: #f5a800;
+            min-width: 30px;
+        }
+        .name {
+            flex-grow: 1;
+            text-align: center;
+            font-weight: 500;
+        }
+        .score {
+            text-align: right;
+            font-weight: bold;
+            color: #f5a800;
+        }
+        h1  {
+            text-align: center;
+            color: #f5a800;
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        body {
+             background: linear-gradient(180deg, #0a1628 0%, #0d2248 40%, #1a3a6e 70%, #2a5a8a 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: rgba(245, 168, 0, 0.8);
+            border: 1px solid #f5a800;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 200px;
+            display: block;
+            margin: 30px auto;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #f5a800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Highscore Leaderboard</h1>
+    <div id="leaderboard">
+        <div class="entry">
+            <span class="rank">1.</span>
+            <span class="name">PlayerOne</span>
+            <span class="score">1500</span>
+        </div>
+        <div class="entry">
+            <span class="rank">2.</span>
+            <span class="name">PlayerTwo</span>
+            <span class="score">1200</span>
+        </div>
+        <div class="entry">
+            <span class="rank">3.</span>
+            <span class="name">PlayerThree</span>
+            <span class="score">900</span>
+        </div>
+    </div>
+    <a href="../selectionpage/routenauswahl.html">
+        <button id="play">Play</button>
+    </a>
+    
+</body>
+</html>
